@@ -1,0 +1,178 @@
+#container{
+    min-height: 100vh;
+    background-color:#090F1D;
+    top: 0;
+    left: 0;
+}
+
+* h2  , * h3 {
+    font-family: fonts;
+}
+
+#login-panel-side{
+    width: 80%;
+    height: 70%;
+    background-color:#050811;
+    border-radius: 10px;
+    color: white;
+}
+
+#right-side-photo{
+    background-image: linear-gradient(to bottom , rgba(0, 0, 0, 0.568) , rgba(0, 0, 0, 0.233)) , url(/Images/Rectangle\ 6.png);
+    background-size: cover;
+    text-align: right;
+    /* transform: translateX(100%); */
+    width: 50% !important;
+    min-height: 70vh !important;
+}
+
+#right-side-photo *{
+    transform: translateY(200px);
+}
+
+.leftside{
+    text-align: right;
+    transition: 500ms;
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+
+#login-user{
+    display: flex;
+}
+
+
+#creataccount-user , #completeinf-user , #verifynumber-user , #forgetpass-user{
+    display: none;
+}
+
+.leftside span{
+    color: #C3C0C0;
+}
+
+#line{
+    width: var(--w);
+    height: 1px;
+    background-color: #FFF;
+}
+
+#input-side{
+    width: 100%;
+    min-height: 30vh;
+    padding: 10px;
+    transform: translateY(20px);
+    /* background-color: aqua; */
+}
+
+#input-side>div , #button-side , #code-input-side{
+    width: 95% !important;
+}
+
+#button-side{
+    padding: 20px 0;
+}
+
+#title-input span{
+    color: white;
+    font-family: med;
+}
+
+.input{
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    text-align: right;
+    border-radius: 5px;
+    background-color: #090F1D;
+    color: white;
+}
+
+.input-number{
+    width: 80%;
+    padding: 10px 10px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    text-align: right;
+    border-radius: 5px;
+    background-color: #090F1D;
+    color: white;
+}
+
+#button-side button{
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-family: med; 
+    color: #92530A;
+    border: 1px solid #92530A;
+    background-color: transparent;
+}
+
+#button-side button[hg]{
+    background-color: #92530A ;
+    color: white;
+}
+
+.code{
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #090F1D;
+    color: white;
+    text-align:center;
+}
+
+.a{
+    width: 95%;
+    text-decoration: none;
+    color: aqua;
+    background-color: transparent !important;
+    border: none;
+    text-align: right;
+}
+
+#send-code{
+    width: 200px;
+    padding: 8px;
+    border: none;
+    color: white;
+    font-family: med;
+    background-color: #92530A;
+    border-radius: 5px 0 0 5px;
+}
+
+#error-side{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
+
+#error-side span{
+    color: #FA5252;
+    font-size: 15px;
+
+}
+
+#error-side img{
+    width: 20px;
+}
+
+@font-face {
+    font-family: fonts;
+    src: url(/Fonts/IRANSansWeb_Black.ttf);
+}
+
+@font-face {
+    font-family: med;
+    src: url(/Fonts/IRANSansWeb_Medium.ttf);
+}

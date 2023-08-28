@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Style/style.css">
+    <link rel="stylesheet" href="/Style/responsive.css">
+    <link rel="stylesheet" href="/Bootstrap/bootstrap/dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container" class="w-100 position-absolute d-flex justify-content-center align-items-center">
+        <div id="login-panel-side" class="d-flex justify-content-start align-items-center flex-row overflow-hidden">
+            <div id="login-user" class="leftside flex-column gap-2 justify-content-start align-items-end overflow-hidden  p-4 gap-3">
+                <h3>
+                    ورود به حساب کاربری
+                </h3>
+                <div id="line" style="--w:35%;"></div>
+                <span>
+                    جهت ورود لطفا شماره تماس و رمز عبور خود را وارد کنید
+                </span>
+                <div id="input-side" class="d-flex flex-column justify-content-center align-items-center gap-3">
+                    <div id="title-input" class="w-100 d-flex flex-row-reverse gap-2 justify-content-start align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                        </svg>
+                        <span>شماره تماس</span>
+                    </div>
+                    <div id="input" class="w-100 d-flex flex-row-reverse gap-2 justify-content-start align-items-center">
+                        <input type="text" class="input" name="" id="" placeholder="شماره تماس خود را وارد کنید" dir="rtl">
+                    </div>
+                    <div id="title-input" class="w-100 d-flex flex-row-reverse gap-2 justify-content-start align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-lock2-fill" viewBox="0 0 16 16">
+                            <path d="M7 6a1 1 0 0 1 2 0v1H7V6z"/>
+                            <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-2 6v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V8.3c0-.627.46-1.058 1-1.224V6a2 2 0 1 1 4 0z"/>
+                          </svg>
+                        <span>رمز عبور</span>
+                    </div>
+                    <div id="input" class="w-100 d-flex flex-row-reverse gap-2 justify-content-start align-items-center">
+                        <input type="password" class="input" name="" id="" placeholder=" رمز عبور خود را وارد کنید">
+                    </div>
+                    <button id="forget-pass" class="a">
+                        فراموشی رمز عبور
+                    </button>
+                </div>
+                <div id="button-side" class="d-flex flex-column justify-content-center align-items-center gap-3">
+                    <button id="login-account" hg class="button">
+                        ورود به حساب کاربری
+                    </button>
+                    <button id="creat-account" class="button">
+                        ساخت حساب کاربری
+                    </button>
+                </div>
+            </div>
+            <div id="creataccount-user" class="leftside flex-column gap-2 justify-content-start align-items-end overflow-hidden  p-4 gap-3">
+                <h3>
+                    ثبت نام
+                </h3>
+                <div id="line" style="--w:15%;"></div>
+                <span>
+                    جهت ثبت نام اطلاعات زیر را تکمیل کنید
+                </span>
+                <div id="input-side" class="d-flex flex-column justify-content-center align-items-center gap-3">
+                    <!-- <div id="error-side" class="w-100 d-flex flex-row-reverse gap-2 justify-content-start align-items-center">
+                        <img src="/Images/icons8-error-30.png" alt="">
+                        <span>نام کابری اشتباه است</span>
+                    </div> -->
+                    <div id="title-input" class="w-100 d-flex flex-row-reverse gap-2 justify-content-start align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                        </svg>
+                        <span>شماره تماس</span>
+                    </div>
+                    <div id="input" class="w-100 d-flex flex-row-reverse gap-2 justify-content-start align-items-center">
+                        <input type="text" class="input number" name="" id="" placeholder="شماره تماس خود را وارد کنید" dir="rtl">
+                    </div>
+                    <div id="title-input" class="w-100 d-flex flex-row-reverse gap-2 justify-content-start align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-lock2-fill" viewBox="0 0 16 16">
+                            <path d="M7 6a1 1 0 0 1 2 0v1H7V6z"/>
+                            <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-2 6v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V8.3c0-.627.46-1.058 1-1.224V6a2 2 0 1 1 4 0z"/>
+                          </svg>
+                        <span>رمز عبور</span>
+                    </div>
+                    <div id="input" class="w-100 d-flex flex-row-reverse gap-2 justify-content-start align-items-center">
+                        <input type="password" class="input pass" name="" id="" placeholder=" رمز عبور خود را وارد کنید">
+                    </div>
+                    <div id="title-input" class="w-100 d-flex flex-row-reverse gap-2 justify-content-start align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-lock2-fill" viewBox="0 0 16 16">
+                            <path d="M7 6a1 1 0 0 1 2 0v1H7V6z"/>
+                            <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-2 6v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V8.3c0-.627.46-1.058 1-1.224V6a2 2 0 1 1 4 0z"/>
+                          </svg>
+                        <span>تکرار رمز عبور</span>
+                    </div>
+                    <div id="input" class="w-100 d-flex flex-row-reverse gap-2 justify-content-start align-items-center">
+                        <input type="password" class="input pass" name="" id="" placeholder=" رمز عبور خود را وارد کنید" >
+                    </div>
+                </div>
+                <div id="button-side" class="d-flex flex-column justify-content-center align-items-center gap-3">
+                    <button id="creat-account" hg class="button">
+                        ساخت حساب کاربری
+                    </button>
+                    <button id="back-login-account">
+                          بازگشت به ورود
+                    </button>
+                </div>
+            </div>
+            <div id="completeinf-user" class="leftside  flex-column gap-2 justify-content-start align-items-end overflow-hidden  p-4 gap-3">
+                <h3>
+                    تکمیل اطلاعات
+                </h3>
+                <div id="line" style="--w:25%;"></div>
+                <span>
+                    اطلاعات خود را تکمیل کنید
+                </span>
+                <div id="input-side" class="d-flex flex-column justify-content-center align-items-center gap-3">
+                    <div id="title-input" class="w-100 d-flex flex-row-reverse gap-2 justify-content-start align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                        </svg>
+                        <span>نام و نام خانوادگی </span>
+                    </div>
+                    <div id="input" class="w-100 d-flex flex-row-reverse gap-2 justify-content-start align-items-center">
+                        <input type="text" class="input" name="" id="" placeholder=" نام و نام خانوادگی خود را وارد کنید" dir="rtl">
+                    </div>
+                    <div id="title-input" class="w-100 d-flex flex-row-reverse gap-2 justify-content-start align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                            <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                            <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                        </svg>
+                        <span>
+                            (به شکل مثال زیر) تاریخ تولد
+                        </span>
+                    </div>
+                    <div id="input" class="w-100 d-flex flex-row-reverse gap-2 justify-content-start align-items-center">
+                        <input type="password" class="input" name="" id="" placeholder="8 مرداد 1402" dir="rtl">
+                    </div>
+                    <div id="title-input" class="w-100 d-flex flex-row-reverse gap-2 justify-content-start align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                            <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+                            <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+                        </svg>
+                        <span>ایمیل</span>
+                    </div>
+                    <div id="input" class="w-100 d-flex flex-row-reverse gap-2 justify-content-start align-items-center">
+                        <input type="password" class="input" name="" id="" placeholder="test@gmail.com" dir="rtl">
+                    </div>
+                </div>
+                <div id="button-side" class="d-flex flex-column justify-content-center align-items-center gap-3">
+                    <button id="completeinf-account" hg>
+                        تکمیل اطلاعات
+                    </button>
+                    <button id="back-creat-account">
+                          بازگشت به ثبت نام
+                    </button>
+                </div>
+            </div>
+            <div id="verifynumber-user" class="leftside flex-column gap-2 justify-content-start align-items-end overflow-hidden  p-4 gap-3">
+                <h3>
+                    تایید شماره تماس
+                </h3>
+                <div id="line" style="--w:30%;"></div>
+                <span>
+                    لطفا کد اس ام اس شده به شماره ی <span id="number">....</span> را وارد کنید
+                </span>
+                <div id="input-side" class="d-flex flex-column justify-content-center align-items-center gap-5">
+                    <div id="title-input" class="w-100 d-flex flex-row-reverse gap-2 justify-content-start align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-check-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                            <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                          </svg>
+                        <span>کد تایید</span>
+                    </div>
+                    <div id="code-input-side" class="w-100 d-flex flex-row gap-2 justify-content-center align-items-center gap-3">
+                        <input type="text" class="code" maxlength="4">
+                        <span>-</span>
+                        <input type="text" class="code" maxlength="4">
+                        <span>-</span>
+                        <input type="text" class="code" maxlength="4">
+                        <span>-</span>
+                        <input type="text" class="code" maxlength="4">
+                    </div>
+                    <a href="" class="a">ارسال مجدد کد</a>
+                </div>
+                <div id="button-side" class="d-flex flex-column justify-content-center align-items-center gap-3">
+                    <button id="login-account" hg>
+                         تایید شماره تماس
+                    </button>
+                    <button id="back-login-account">
+                          بازگشت به ورود
+                    </button>
+                </div>
+            </div>
+            <div id="forgetpass-user" class="leftside flex-column gap-2 justify-content-start align-items-end overflow-hidden  p-4 gap-3">
+                <h3>
+                    فراموشی رمز عبور
+                </h3>
+                <div id="line" style="--w:30%;"></div>
+                <span>
+                    لطفا شماره تماس خود را وارد کنید
+                </span>
+                <div id="input-side" class="d-flex flex-column justify-content-center align-items-center gap-3">
+                    <div id="title-input" class="w-100 d-flex flex-row-reverse gap-2 justify-content-start align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                          </svg>
+                        <span>شماره تماس</span>
+                    </div>
+                    <div id="input" class="w-100 d-flex flex-row-reverse justify-content-start align-items-center">
+                        <input type="text" class="input-number" name="" id="" placeholder="    شماره تماس خود را وارد کنید" dir="rtl">
+                        <button id="send-code">
+                            ارسال رمز موقت
+                        </button>
+                    </div>
+                    <div id="title-input" class="w-100 d-flex flex-row-reverse gap-2 justify-content-start align-items-center">
+
+                        <span>
+                            رمز عبور موقت اس ام اس شده
+                        </span>
+                    </div>
+                    <div id="input" class="w-100 d-flex flex-row-reverse gap-2 justify-content-start align-items-center">
+                        <input type="password" class="input" name="" id="" placeholder="این بخش را پس از وارد کردن شماره تماس وارد کنید" dir="rtl">
+                    </div>
+                    <div id="title-input" class="w-100 d-flex flex-row-reverse gap-2 justify-content-start align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                            <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+                          </svg>
+                        <span>رمز عبور جدید</span>
+                    </div>
+                    <div id="input" class="w-100 d-flex flex-row-reverse gap-2 justify-content-start align-items-center">
+                        <input type="password" class="input" name="" id="" placeholder="رمز عبور جدید" dir="rtl">
+                    </div>
+                    <div id="title-input" class="w-100 d-flex flex-row-reverse gap-2 justify-content-start align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                            <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+                          </svg>
+                        <span>تکرار رمز عبور جدید</span>
+                    </div>
+                    <div id="input" class="w-100 d-flex flex-row-reverse gap-2 justify-content-start align-items-center">
+                        <input type="password" class="input" name="" id="" placeholder="تکرار رمز عبور جدید" dir="rtl">
+                    </div>
+                </div>
+                <div id="button-side" class="d-flex flex-row-reverse justify-content-center align-items-center gap-3">
+                    <button id="change-pass-account" hg>
+                        تغییر رمز عبور
+                    </button>
+                    <button id="back-creat-account">
+                        بازگشت به ثبت نام 
+                    </button>
+                </div>
+            </div>
+            <div id="right-side-photo" class=" d-flex flex-column gap-2 justify-content-start align-items-end overflow-hidden p-4">
+                <h2>
+                    به پارس آکادمی خوش آمدید
+                </h2>
+                <p>
+                    به دنیای برنامه نویس ها خوش آمدی دوست من، در پارس آکادمی میتوانی از دوره های آموزشی تا مقالات مرتبط با برنامه نویسی و پادکست های برنامه نویسی را پیدا کنی
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="/Js/main.js"></script>
+<script src="/Bootstrap/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

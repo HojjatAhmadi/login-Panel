@@ -1,0 +1,26 @@
+@media only screen and (max-width: 868px){
+    #container{
+        min-height: 150vh !important;
+    }
+    #login-panel-side{
+        /* background-color: aqua !important; */
+        flex-direction: column-reverse !important;
+        width: 60%;
+        min-height: 110%;
+        justify-content: space-between !important;
+    }
+    .leftside , #right-side-photo{
+        width: 100% !important;
+        min-height: 50% !important;
+    }
+    #right-side-photo{
+        border-radius: 0 0 5px 5px !important;
+        min-height: 50vh !important;
+    }
+    #right-side-photo *{
+        /* transform: translateY(-5px); */
+    }
+    #input-side>div , #button-side , #code-input-side{
+        width: 100% !important;
+    }
+}
